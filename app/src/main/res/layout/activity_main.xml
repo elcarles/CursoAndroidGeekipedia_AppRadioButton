@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="101dp" />
+        android:text="@string/valor1"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="80dp" />
 
     <EditText
         android:id="@+id/et_valor2"
@@ -21,6 +23,43 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:text="@string/valor2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="304dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="572dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

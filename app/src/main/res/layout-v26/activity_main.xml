@@ -13,12 +13,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="@string/valor1"
-        android:importantForAutofill="no"
         android:inputType="number"
+        android:text="@string/valor1"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/et_valor2"
@@ -26,13 +26,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="44dp"
-        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/valor2"
         android:inputType="number"
+        android:text="@string/valor2"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_valor1" />
+        app:layout_constraintTop_toBottomOf="@+id/et_valor1"
+        android:autofillHints="" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -48,14 +48,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/suma"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rb_restar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/resta"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <Button

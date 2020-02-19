@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/valor1"
         android:importantForAutofill="no"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/valor2"
@@ -36,8 +36,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="148dp"
-        android:layout_height="66dp"
+        android:layout_width="156dp"
+        android:layout_height="140dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +56,20 @@
             android:layout_height="wrap_content"
             android:text="@string/resta"
             android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mult"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/div"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <Button
@@ -63,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:onClick="calcular"
         android:text="@string/boton"
         android:textSize="24sp"

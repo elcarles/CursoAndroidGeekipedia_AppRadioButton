@@ -6,4 +6,6 @@
     <string name="tv_resultado">Resultado</string>
     <string name="suma">Sumar</string>
     <string name="resta">Restar</string>
+    <string name="mult">Multiplicar</string>
+    <string name="div">Dividir</string>
 </resources>

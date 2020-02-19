@@ -12,11 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    private EditText et_valor1;
-    private EditText et_valor2;
+    private EditText et_valor1 ,et_valor2 ;
     private TextView tv_resultado;
-    private RadioButton rb_sumar;
-    private RadioButton rb_restar;
+    private RadioButton rb_sumar, rb_restar;
 
 
 
@@ -41,22 +39,26 @@ public class MainActivity extends AppCompatActivity {
 
         int valor1_int = Integer.parseInt(valor1_s);
         int valor2_int = Integer.parseInt(valor2_s);
-        int resultado = 0;
+        int res= 0;
 
     //hacer las operaciones.
 
         if (rb_sumar.isChecked()) {
-            resultado = valor1_int + valor2_int;
+            res = valor1_int + valor2_int;
+            String resultado = String.valueOf(res);
+            tv_resultado.setText(resultado);
         }
         else
         if (rb_sumar.isChecked()) {
-            resultado = valor1_int - valor2_int;
+            res = valor1_int - valor2_int;
+            String resultado = String.valueOf(res);
+            tv_resultado.setText(resultado);
         }
          else
         {Toast.makeText(getApplicationContext(), "Debe de marcar sumar o restar " , Toast.LENGTH_LONG).show();}
 
 
-        tv_resultado.setText("El resultado es  " + resultado );
+
 
 
 

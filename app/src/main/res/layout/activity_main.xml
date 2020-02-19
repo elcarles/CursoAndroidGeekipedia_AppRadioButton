@@ -64,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
+        android:onClick="calcular"
         android:text="@string/boton"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else
-        {Toast.makeText(getApplicationContext(), "Debe de marcar sumar o restar " , Toast.LENGTH_LONG).show();}
+        {Toast.makeText(getApplicationContext(), "Debe de marcar alguna operacion " , Toast.LENGTH_LONG).show();}
 
 
 
